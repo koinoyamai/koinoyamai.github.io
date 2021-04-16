@@ -1,12 +1,12 @@
 
-html, body {
+html, body, header, footer, main {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: Arial, sans-serif;
+body, button {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 
@@ -15,6 +15,7 @@ body {
   top: 0;
   height: 48px;
   padding: 0 10px;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.5);
 
   font-size: 20px;
   color: #fff;
@@ -43,7 +44,88 @@ body {
   font-size: 12px;
 }
 
-.v-youtube, .v-twitter, .v-discord {
+.v-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+}
+
+.v-card {
+  width: 100%;
+  padding-top: 16px;
+  border-radius: 4px;
+  margin-top: 8px;
+  box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.5);
+}
+
+@media(min-width: 960px) {
+  .v-card {
+    max-width:900px;
+  }
+}
+
+@media(min-width: 1264px) {
+  .v-card {
+    max-width:1185px;
+  }
+}
+
+@media(min-width: 1904px) {
+  .v-card {
+    max-width:1785px;
+  }
+}
+
+
+.v-card-title {
+  padding: 0 32px;
+
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#333, #333);
+  background-position: 16px;
+  background-size: 8px 80%;
+}
+
+.v-card-content {
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+}
+
+.v-card-button {
+  border-width: 0;
+  border-radius: 28px;
+  padding: 8px 16px;
+  margin: 4px;
+  min-width: 64px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #FFF;
+  background-image: linear-gradient(90deg, #8358be var(--progress, 0%), #a66ee0 var(--progress, 0%));
+  box-shadow: 0 3px 5px -2px #666;
+
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+  text-transform: none;
+  user-select: none;
+}
+.v-card-button:hover {
+  box-shadow: 0 3px 10px 0 #999;
+}
+.v-card-button:active, .v-card-button:focus-visible {
+  background-image: linear-gradient(90deg, #8358be var(--progress, 0%), #d7b3f9 var(--progress, 0%));
+  outline: 0;
+}
+
+
+.v-icon {
   margin-left: 10px;
   width: 30px;
   height: 30px;
@@ -52,11 +134,11 @@ body {
   background-repeat: no-repeat;
   background-color: rgba(255, 255, 255, 0.5);
 }
-
-.v-youtube:active, .v-twitter:active, .v-discord:active {
+.v-icon:active, .v-icon:focus-visible {
   background-color: rgba(255, 255, 255, 0.7);
+  outline: 0;
 }
-.v-youtube:hover, .v-twitter:hover, .v-discord:hover {
+.v-icon:hover {
   box-shadow: 0 0 10px 0 #cac;
   background-size: 26px;
 }
