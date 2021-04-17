@@ -115,6 +115,7 @@ body, button {
   white-space: normal;
   text-transform: none;
   user-select: none;
+  -webkit-user-select: none;
 }
 .v-card-button:hover {
   box-shadow: 0 3px 10px 0 #999;
