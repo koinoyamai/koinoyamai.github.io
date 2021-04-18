@@ -10,7 +10,7 @@ body, button {
   font-size: 16px;
 }
 
-.v-app {
+.v-container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,9 +33,9 @@ body, button {
 
 .v-logo {
   width: 28px;
-  height: 24px;
+  height: 25px;
   background-size: 28px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 120'%3E%3Cpath stroke-width='8.5' stroke='%23000' fill='%23E6808A' d='M70,114.5l53,-53a24,24,0,0,0,-48,-48l-5,5l-5,-5a24,24,0,0,0,-48,48z'/%3E%3Cpath fill='%23E84757' d='M70,96l36,-36a15,15,0,0,0,-29.5,-29.5l-6.5,6.5l-6.5,-6.5a15,15,0,0,0,-29.5,29.5z'/%3E%3Cpath fill='%23E81224' d='M70,83.5l22,-22a9,9,0,0,0,-17,-17l-5,5l-5,-5a9,9,0,0,0,-17,17z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 136 123'%3E%3Cpath stroke-width='8.5' stroke='%23000' fill='%23E6808A' d='M68,116l53,-53a24,24,0,0,0,-48,-48l-5,5l-5,-5a24,24,0,0,0,-48,48z'/%3E%3Cpath fill='%23E84757' d='M68,97.5l36,-36a15,15,0,0,0,-29.5,-29.5l-6.5,6.5l-6.5,-6.5a15,15,0,0,0,-29.5,29.5z'/%3E%3Cpath fill='%23E81224' d='M68,85l22,-22a9,9,0,0,0,-17,-17l-5,5l-5,-5a9,9,0,0,0,-17,17z'/%3E%3C/svg%3E");
 }
 
 .v-title {
