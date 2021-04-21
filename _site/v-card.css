@@ -32,6 +32,9 @@
   outline: 0;
 
   color: #FFF;
+  background-color: #a66ee0;
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-image: linear-gradient(90deg, #8358be var(--progress, 0%), #a66ee0 var(--progress, 0%));
   box-shadow: 0 3px 5px -2px #666;
 
@@ -44,16 +47,19 @@
   user-select: none;
   -webkit-user-select: none;
 }
-.vc-button:active {
+.vc-button:active:not(.vc-select) {
   background-image: linear-gradient(90deg, #8358be var(--progress, 0%), #d7b3f9 var(--progress, 0%));
+}
+.vc-select:active {
+  background-color: #d7b3f9;
 }
 .vc-button:hover, .vc-button:focus {
   box-shadow: 0 3px 10px 0 #999;
 }
 
 .vc-select {
+  padding: 8px 8px 8px 24px;
+  background-size: 24px;
+  background-position: 0% 50%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z'/%3E%3C/svg%3E");
 }
-
-.vc-unselect {
-}
-
