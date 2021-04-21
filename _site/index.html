@@ -10,30 +10,41 @@
   <link rel="icon" type="image/png" href="/favicon-32x32.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="v.css">
+  <link rel="stylesheet" href="v-header.css">
+  <link rel="stylesheet" href="v-card.css">
+  <link rel="stylesheet" href="v-player.css">
   <script src=""></script>
 </head>
 <body>
 <div class="v-container">
 <header class="v-header">
-  <div class="v-logo"></div>
-  <div class="v-title">まいボタン</div>
-  <a class="v-icon v-youtube" title="Youtube" target="_blank" href="https://www.youtube.com/channel/UCgttI8QfdWhvd3SRtCYcJzw"></a>
-  <a class="v-icon v-twitter" title="Twitter" target="_blank" href="https://twitter.com/koinoya_mai"></a>
-  <a class="v-icon v-discord" title="Discord" target="_blank" href="https://discord.gg/koinoyamai"></a>
+  <div class="vh-logo"></div>
+  <div class="vh-title">まいボタン</div>
+  <a class="vh-link vh-youtube" title="Youtube" target="_blank" href="https://www.youtube.com/channel/UCgttI8QfdWhvd3SRtCYcJzw"></a>
+  <a class="vh-link vh-twitter" title="Twitter" target="_blank" href="https://twitter.com/koinoya_mai"></a>
+  <a class="vh-link vh-discord" title="Discord" target="_blank" href="https://discord.gg/koinoyamai"></a>
 </header>
 <main class="v-main">
   <div class="v-card">
-    <div class="v-card-title">日常</div>
-    <div class="v-card-content">
-      <button class="v-card-button" type="button">123四五六</button>
-      <button class="v-card-button" type="button" data-voice="321" style="--progress:33%;">播放中</button>
+    <div class="vc-title">日常</div>
+    <div class="vc-content">
+      <button class="vc-button" type="button">123四五六</button>
+      <button class="vc-button" type="button" data-voice="321" style="--progress:33%;">播放中</button>
+    </div>
+  </div>
+  <div class="v-card">
+    <div class="vc-title">日常</div>
+    <div class="vc-content">
+      <button class="vc-button vc-unselect" type="button">A</button>
+      <button class="vc-button vc-select" type="button" data-voice="321">已選取</button>
     </div>
   </div>
 </main>
 <div class="v-player">
-  <div class="v-player-title">loading...</div>
-  <div class="v-player-control">
-    <button class="v-player-button"><div class="v-ctl-stop"></div></button>
+  <div class="vp-title">loading...</div>
+  <div class="vp-control">
+    <button class="vp-button"><div class="vp-stop"></div></button>
+    <button class="vp-button"><div class="vp-stop"></div></button>
   </div>
 </div>
 </div>

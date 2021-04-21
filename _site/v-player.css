@@ -1,0 +1,44 @@
+
+
+.vp-title {
+  margin-top: 10px;
+
+  color: #A66EE0;
+}
+
+
+.vp-control {
+  padding: 5px;
+
+  display: flex;
+  align-items: center;
+}
+
+
+.vp-button {
+  padding: 0;
+  margin: 5px;
+  border-radius: 50%;
+  border-width: 0;
+  outline: 0;
+
+  background-color: #999;
+  box-shadow: 0 1px 5px -1px #666;
+}
+
+.vp-button div {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+.vp-button:hover, .vp-button:focus {
+  box-shadow: 0 2px 10px 0 #999;
+}
+.vp-button:active div {
+  opacity: 0.6;
+}
+
+
+.vp-stop {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFF' d='M24,24H0V0H24Z'/%3E%3Cpath fill='%23A66EE0' d='M16,16H8V8H16Z'/%3E%3C/svg%3E");
+}
