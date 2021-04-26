@@ -31,6 +31,8 @@ jobs:
           cat assets/style/card.css >> v.css
           cat assets/style/player.css >> v.css
           curl -o _site/v.min.css -X POST -s --data-urlencode 'input@v.css' https://cssminifier.com/raw
+          cat assets/script/player.js > v.js
+          curl -o _site/v.min.js -X POST -s --data-urlencode 'input@v.js' https://javascript-minifier.com/raw
           find . -mindepth 1 -maxdepth 1 -type f,d ! -name .git ! -name _site -print | xargs rm -rf
           find _site -mindepth 1 -maxdepth 1 -type f,d ! -name .git ! -name _site -print | xargs -I {} mv -f '{}' .
           rm -rf _site
