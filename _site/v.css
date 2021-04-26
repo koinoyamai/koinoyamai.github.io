@@ -41,14 +41,32 @@ body, button {
 }
 
 .v-main {
-  padding: 8px;
+  margin: 8px auto;
 
   display: flex;
   flex-direction: column;
 }
 
+@media(min-width: 960px) {
+  .v-main {
+    max-width:900px;
+  }
+}
+
+@media(min-width: 1264px) {
+  .v-main {
+    max-width:1185px;
+  }
+}
+
+@media(min-width: 1904px) {
+  .v-main {
+    max-width:1785px;
+  }
+}
+
 .v-card {
-  margin: 4px;
+  margin: 4px 8px;
 
   border-radius: 4px;
   box-shadow: 0 1px 5px -1px #888;
@@ -64,24 +82,5 @@ body, button {
   align-items: center;
 
   background-color: rgba(238, 238, 238, 0.8);
-}
-
-
-@media(min-width: 960px) {
-  .v-card {
-    max-width:900px;
-  }
-}
-
-@media(min-width: 1264px) {
-  .v-card {
-    max-width:1185px;
-  }
-}
-
-@media(min-width: 1904px) {
-  .v-card {
-    max-width:1785px;
-  }
 }
 
