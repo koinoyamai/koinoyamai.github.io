@@ -41,27 +41,29 @@ body, button {
 }
 
 .v-main {
-  margin: 8px auto;
-
+  margin: 8px 0;
   display: flex;
   flex-direction: column;
 }
 
 @media(min-width: 960px) {
   .v-main {
-    max-width:900px;
+    width:900px;
+	margin: 8px auto;
   }
 }
 
 @media(min-width: 1264px) {
   .v-main {
-    max-width:1185px;
+    width:1185px;
+	margin: 8px auto;
   }
 }
 
 @media(min-width: 1904px) {
   .v-main {
-    max-width:1785px;
+    width:1785px;
+	margin: 8px auto;
   }
 }
 

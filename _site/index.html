@@ -26,30 +26,33 @@
 </header>
 <main id="v_main" class="v-main">
   <div class="v-card">
-    <div class="vc-title">測試用</div>
+    <div class="vc-title">測試樣板用</div>
     <div class="vc-content">
       <button type="button" class="vc-button">123四五六</button>
-      <button type="button" class="vc-button" data-voice="321" style="--progress:33%;">播放中</button>
-      <button type="button" class="vc-button vc-on">A</button>
-      <button type="button" class="vc-button vc-on" data-voice="321">已選取</button>
+      <button type="button" class="vc-button">A</button>
+      <button type="button" class="vc-button"style="--progress:33%;">播放中</button>
+      <button type="button" class="vc-button vc-on">已選取</button>
     </div>
   </div>
 </main>
 <div class="v-player">
   <div id="v_title" class="vp-title">loading...</div>
   <div class="vp-control">
-    <button type="button" class="vp-button" title="停止"><div class="vp-stop"></div></button>
-    <button type="button" class="vp-button vp-off" title="循環"><div class="vp-loop"></div></button>
-    <button type="button" class="vp-button" title="清單" disabled><div class="vp-favor"></div></button>
+    <button id="v_stop" type="button" class="vp-button" data-i18n="201"><div class="vp-stop"></div></button>
+    <button id="v_loop" type="button" class="vp-button" data-i18n="202"><div class="vp-loop"></div></button>
+    <button id="v_favor" type="button" class="vp-button" data-i18n="203" disabled><div class="vp-favor"></div></button>
   </div>
 </div>
 </div>
 <script>
-  window.dataLayer = [['js', new Date()], ['config', 'G-BX3T7G8YQZ']];
   window.vPlayer = {};
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BX3T7G8YQZ');
 </script>
 <script src="player.js"></script>
-<script src="voice.js"></script>
+<script async src="voice.js"></script>
 <footer class="v-footer">
 &copy;2021 まいの恋びと同盟<br>
 Powered by <a target="_blank" href="https://twitter.com/yiting2002">@yiting2002</a><br>
