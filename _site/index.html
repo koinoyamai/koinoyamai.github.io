@@ -11,6 +11,13 @@
   <link rel="manifest" href="https://voice.koinoyamai.ml/webmanifest">
   <link rel="stylesheet" href="v.min.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BX3T7G8YQZ"></script>
+  <script>
+  window.vPlayer = {};
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BX3T7G8YQZ');
+  </script>
 </head>
 <body>
 <div class="v-container">
@@ -22,7 +29,7 @@
   <a class="vh-link vh-discord" title="Discord" target="_blank" href="https://discord.gg/koinoyamai"></a>
 </header>
 <main id="v_main" class="v-main">
-  <div class="v-card">
+  <!--<div class="v-card">
     <div class="vc-title">測試樣板用</div>
     <div class="vc-content">
       <button type="button" class="vc-button">123四五六</button>
@@ -30,7 +37,7 @@
       <button type="button" class="vc-button"style="--progress:33%;">播放中</button>
       <button type="button" class="vc-button vc-on">已選取</button>
     </div>
-  </div>
+  </div>-->
 </main>
 <div class="v-player">
   <div id="v_title" class="vp-title">loading...</div>
@@ -41,13 +48,6 @@
   </div>
 </div>
 </div>
-<script>
-  window.vPlayer = {};
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-BX3T7G8YQZ');
-</script>
 <script src="v.min.js"></script>
 <script async src="https://voice.koinoyamai.ml/i18n/zh.js"></script>
 <footer class="v-footer">
