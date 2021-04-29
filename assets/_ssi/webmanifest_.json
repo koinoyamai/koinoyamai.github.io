@@ -1,0 +1,15 @@
+{
+  "name":"舞按鈕",
+  "icons":[
+    {
+      "src":"https://koinoyamai.ml/android-chrome-192x192.png",
+      "sizes":"192x192",
+      "type":"image/png",
+      "purpose":"maskable"
+    }
+  ],
+  "theme_color":"#FFF",
+  "background_color":"#FFF",
+  "display":"standalone",
+  "start_url":"https://koinoyamai.ml/?utm_source=pwa&utm_content=<!--# include virtual="/utm_content" -->"
+}
